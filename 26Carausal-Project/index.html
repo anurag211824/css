@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carausal</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        width: 100%;
+        height: 100vh;
+        font-size: 62.5%;
+      }
+      body{
+        display: grid;
+        place-items: center;
+
+      }
+      .container-img{
+        width: 100vw;
+        height:100vh;
+        border-radius: 1rem;
+        box-shadow: rgba(100,100,111,0.2) 0px 7px 29px 0px;
+        background-image: url("./images/bgi1.jpeg");
+        background-size:100% 100%;
+        animation: gallery 20s ease-in infinite;
+      }
+      @keyframes gallery {
+        0%{
+            background-image: url(./images/bgi1.jpeg);
+        }
+        20%{
+            background-image: url(./images/bgi2.jpg);
+        }
+        40%{
+            background-image: url(./images/bgi3.webp);
+        }
+        60%{
+            background-image: url(./images/bgi4.jpg);
+        }
+        80%{
+            background-image: url(./images/bgi5.jpg);
+        }
+        100%{
+            background-image: url(./images/bgi6.jpeg);
+        }
+
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-img">
+
+    </div>
+  </body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        height: 3000px;
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        padding-left:200px;
+      }
+      .side-bar1 {
+        background-color: rgb(57, 56, 56);
+        padding: 10px;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+       width:50px
+        
+      }
+      .side-bar2 {
+        background-color:rgb(74, 69, 69);
+        padding: 10px;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left:70px;
+       
+      }
+      .cat {
+        height: 50px;
+        width: 50px;
+        border-radius: 30px;
+      }
+      .photos {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      .side-bar {
+        display: flex;
+        justify-content: space-between;
+      }
+      .infoplus{
+        display: flex;
+        justify-content: space-between;
+        gap:100px;
+        color: white;
+        padding:5px;
+        font-size: 13px;
+      }
+      .add{
+        color:grey;
+        font-size: 17px;
+      }
+      .hashtag{
+        display: flex;
+        flex-direction: column;
+        gap:20px;
+        color:gray;
+        font-size:14px;
+        padding:5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="side-bar">
+      <div class="side-bar1">
+        <div class="photos">
+          <img class="cat" src="cat1.jpg" alt="" />
+          <img class="cat" src="cat1.jpg" alt="" />
+          <img class="cat" src="cat1.jpg" alt="" />
+        </div>
+      </div>
+      <div class="side-bar2">
+        <div class="infoplus">
+            <div class="info">INFO</div>
+            <div class="add">+</div>
+        </div>
+        <div class="hashtag">
+            <div class="hash"># new-videos</div>
+            <div class="hash"># updates</div>
+            <div class="hash"># faq</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

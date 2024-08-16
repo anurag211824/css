@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=|, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* unvisited link */
+      a {
+        font-size: 30px;
+      }
+      a:link {
+        color: #ff0000;
+      }
+
+      /* visited link */
+      a:visited {
+        color: #00ff00;
+      }
+
+      /* mouse over link */
+      a:hover {
+        color: #ff00ff;
+      }
+
+      /* selected link */
+      a:active {
+        color: #0000ff;
+      }
+      .para1 {
+        display: none;
+        background-color: yellow;
+        padding: 20px;
+      }
+      .anu:hover .para1 {
+        display: block;
+      }
+      p:first-child {
+        color: blue;
+      }
+      .list li:nth-child(1) {
+        color: green;
+        background-color: #ff00ff;
+      }
+      .list2 :first-of-type{
+      color:red;
+      border:1px solid black
+      }
+      .list2 :last-of-type{
+      color:green;
+      border:1px solid black
+      }
+    </style>
+  </head>
+  <body>
+    <a href="https://Google.com">Google.com</a>
+    <div class="anu">
+      Hover over this div element to show the p element
+      <p class="para1">Tada! Here I am!</p>
+
+      <!-- 
+    the first child property -->
+      <p>This is some text</p>
+      <p>This is some text</p>
+      <div class="abcd">
+        <p>This is some text.</p>
+        <p>This is some text.</p>
+      </div>
+
+      <div class="list">
+        <li>Anurag kuar is my name</li>
+        <li>Anurag kuar is my name</li>
+        <li>Anurag kuar is my name</li>
+        <li>Anurag kuar is my name</li>
+        <li>Anurag kuar is my name</li>
+        <br />
+        <br />
+      </div>
+      <div class="list2">
+        <li>Anurag kuar is my name</li>
+        <li>Anurag kuar is my name</li>
+        <li>Anurag kuar is my name</li>
+        <li>Anurag kuar is my name</li>
+        <li>Anurag kuar is my name</li>
+        <li>Anurag kuar is my name</li>
+        <li>Anurag kuar is my name</li>
+        <li>Anurag kuar is my name</li>
+        <li>Anurag kuar is my name</li>
+        <li>Anurag kuar is my name</li>
+      </div>
+    </div>
+  </body>
+</html>

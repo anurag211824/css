@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html,body{
+            height: 100%;
+            width:100%;
+        }
+        body{
+            display: grid;
+            place-items: center;
+            background-color: #191825;
+        }
+        .loader{
+            width:20rem;
+            aspect-ratio: 1;
+            border-radius: 50%;
+            background-color: blue;
+            position: relative;
+            animation: circleloader 02s linear infinite reverse;
+        }
+        .loader::before{
+        content:"";
+        position: absolute;
+        top:0;
+        left:0;
+        width:17rem;
+        aspect-ratio: 1;
+        border-radius:50% ;
+        background-color:#191825;
+        z-index: 1;
+        }
+        .loader::after{
+        content:"";
+        position: absolute;
+        top:-5%;
+        left:35%;
+        width:5rem;
+        aspect-ratio: 1;
+        border-radius:50% ;
+        background-color:#191825;
+        z-index: 1;
+        background-color: blue;
+        box-shadow: 0px 10px 30px rgb(28, 145, 180);
+        }
+        @keyframes circleloader {
+            100%{
+                rotate:360deg;
+        }
+    }
+    </style>
+</head>
+<body>
+    <div class="loader">
+
+    </div>
+</body>
+</html>

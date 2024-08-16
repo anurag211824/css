@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .fan {
+        width: 200px;
+        aspect-ratio: 1;
+        background-color: skyblue;
+        border-radius: 50%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .blade {
+        width: 90%;
+        background-color:blue;
+        height: 10%;
+        animation: spin 1s linear infinite;
+      }
+      @keyframes spin {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+      .controls {
+        text-align: center;
+        margin-top: 20px;
+      }
+   .i,.d,.on{
+    background-color:green;
+    border:none;
+    padding:7px;
+    font-size: 12px;
+    border-radius:10px;
+    color: rgb(255, 255, 255);
+    font-weight: 100;
+   }
+    </style>
+  </head>
+  <body>
+    <div class="fan">
+      <div class="blade"></div>
+    </div>
+    <div class="controls">
+      <button onclick="increaseSpeed()" class="i">Increase Speed</button>
+      <button onclick="decreaseSpeed()" class="d">Decrease Speed</button>
+      <button onclick="toggleFan()" class="on">On/Off</button>
+    </div>
+
+    <script>
+      let blade = document.querySelector('.blade');
+      let isRunning = true;
+      let speed = 1;
+
+      function updateSpeed() {
+        blade.style.animationDuration = `${speed}s`;
+      }
+
+      function increaseSpeed() {
+        if (speed > 0.2) {
+          speed -= 0.2; 
+        }
+        updateSpeed();
+      }
+
+      function decreaseSpeed() {
+        speed += 0.2;
+        updateSpeed();
+      }
+
+      function toggleFan() {
+        if (isRunning) {
+          blade.style.animationPlayState = 'paused';
+        } else {
+          blade.style.animationPlayState = 'running';
+        }
+        isRunning = !isRunning;
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container1 {
+        display: grid;
+        grid-template-columns: 200px 75px;
+      }
+      .box1 {
+        background-color: skyblue;
+      }
+      .box2 {
+        background-color: pink;
+      }
+
+      .container2 {
+        display: grid;
+        grid-template-columns: 50px 1fr 75px;
+      }
+      .boxx1 {
+        background-color: skyblue;
+      }
+      .boxx2 {
+        background-color: pink;
+      }
+      .boxx3{
+        background-color: skyblue;
+      }
+      .container3{
+        display: grid;
+        grid-template-columns:repeat(4,1fr);
+        grid-template-rows: repeat(2,1fr);
+        gap:20px 10px;
+      }
+      .box{
+        background-color: pink;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container1">
+      <div class="box1">200px;</div>
+      <div class="box2">75px;</div>
+    </div>
+    <br />
+    <div class="container2">
+      <div class="boxx1">col1;</div>
+      <div class="boxx2">col2;</div>
+      <div class="boxx3">col3;</div>
+    </div>
+    <br>
+
+    <div class="container3">
+        <div class="box">col1</div>
+        <div class="box">col2</div>
+        <div class="box">col3</div>
+        <div class="box">col4</div>
+        <div class="box">col1</div>
+        <div class="box">col2</div>
+        <div class="box">col3</div>
+        <div class="box">col4</div>
+    </div>
+  </body>
+</html>

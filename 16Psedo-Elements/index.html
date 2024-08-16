@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      p::first-line {
+        color: red;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+      }
+      p::first-letter {
+        color: #ff0000;
+        font-size: xx-large;
+      }
+      p.intro::first-letter {
+        color: blue;
+      }
+      .lorem::before{
+        content:"Example of psedo ele";
+        color:aqua;
+        font-size: larger;
+        font-weight: 700;
+      }
+      .anu::after{
+        content:"I am a engineerin Student";
+        color:tomato;
+        font-size: larger;
+        font-weight: 700;
+      }
+      .ujjawal::selection{
+      color:red;
+      background-color: yellow;
+    }
+    </style>
+  </head>
+  <body>
+    <p>
+      Hello i am anurag kumar leraning css Lorem ipsum dolor sit amet
+      consectetur adipisicing elit. Asperiores, dolor?
+    </p>
+    <p class="intro">I am anurag kumar</p>
+    <div class="lorem">
+      Lorem ipsum dolor sit amet.
+    </div>
+    <div class="anu">
+      My name is anurag kumar
+    </div>
+    <div class="ujjawal">
+      Select some text on this page:
+      This is a paragraph.
+      <br>
+      
+      This is some text in a div element.
+    </div>
+  </body>
+</html>

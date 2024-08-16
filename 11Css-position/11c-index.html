@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook-header</title>
+    <style>
+        *{
+            border:1px solid black
+        }
+        body{
+            height:3000px;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+           
+        }
+        .cat{
+            height:40px;
+            width:40px;
+            border-radius: 25px;
+            margin-right: 4px;
+        }
+        .account{
+            display:flex;
+            align-items: center;
+            flex:1;
+            font-weight: 500;
+            font-size: 17px;
+
+            
+        }
+        .header{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding:20px;
+            margin-left:20px;
+            margin-right: 20px;
+            position: fixed;
+            left:0;
+            right:0;
+        }
+        .btn{
+            display: flex;
+            gap:5px;
+        }
+        .friend,.message{
+            background-color: rgb(95, 95, 227);
+            color: white;
+            border-radius: 5px;
+            padding: 8px;
+            width:100px;
+            border:none
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+       <div class="account">
+        <img class="cat" src="cat1.jpg" alt="">
+        <span>Oliver cat</span>
+       </div>
+       <div class="btn">
+        <button class="friend">Add Friend</button>
+        <button class="message">Message</button>
+       </div>
+    </div>
+</body>
+</html>
