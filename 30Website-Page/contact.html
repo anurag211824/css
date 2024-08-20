@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>contact</title>
+    <style>
+       
+        @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+       * {
+         margin: 0;
+         padding: 0;
+         box-sizing: border-box;
+         font-family: "Poppins", sans-serif;
+       }
+       html,
+       body {
+         width: 100%;
+         height: 100%;
+         font-size: 62.5%;
+         /* 1 rem=10px; */
+       }
+       .container {
+         max-width: 128rem;
+         margin: 0 auto;
+         padding: 9.6rem 2.4rem;
+       }
+       .form-fields {
+         display: flex;
+         flex-direction: column;
+       }
+       .row1 {
+         display: flex;
+         justify-content: space-between;
+         gap: 4rem;
+       }
+       .l {
+         font-size: 2rem;
+       }
+       .form-map-container {
+         display: grid;
+         grid-template-columns: repeat(2, 1fr);
+         gap: 5rem;
+         place-items: center;
+       }
+       .heading {
+         font-size: 3.2rem;
+       }
+       .subheading {
+         font-size: 1.6rem;
+       }
+       .heading-content {
+         padding: 6.4rem 0 2.4rem 0;
+       }
+       .form-fields {
+         margin-bottom: 5rem;
+       }
+       .i {
+         padding: 1rem;
+         font-size: 2rem;
+         width: 100%; /* Ensure input fields take full width */
+       }
+       button {
+         background-color: blue;
+         color: white;
+         font-size: 2rem;
+         border-radius: 1rem;
+         border: none;
+         padding: 2rem;
+         width: 20rem;
+       }
+       .container{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+       }
+       /* Media Queries */
+       @media (max-width: 1300px)  {
+         .row1 {
+           flex-direction: column;
+         }
+         .i {
+           width: 90%;
+         }
+         .l {
+           width: 90%;
+         }
+         .if {
+           width: 100%;
+           aspect-ratio: 1;
+         }
+         .form-map-container {
+           gap: 2rem;
+           padding: 1.5rem;
+         }
+       }
+       
+       @media (max-width: 880px)  {
+         .form-map-container {
+           display: grid;
+           grid-template-columns: repeat(1, 1fr);
+           gap: 1rem;
+           padding: 1.5rem;
+         }
+ 
+         .row1, .row2, .contact-form, .i, .l {
+           width: 100%;
+         }
+ 
+         .if {
+           width: 100%;
+           aspect-ratio: 1;
+         }
+         button{
+            padding: 1.5rem;
+            width: 20rem;
+         }
+       }
+ 
+     </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="heading-content">
+        <div class="heading">Contact Us</div>
+        <p class="subheading">
+          Get in touch with us. We are always here to help you
+        </p>
+      </div>
+
+      <div class="form-map-container">
+        <div class="contact-form">
+          <div class="row1">
+            <div class="form-fields">
+              <label class="l" for="full-name">Full Name</label>
+              <input
+                class="i"
+                type="text"
+                id="full-name"
+                name="full-name"
+                placeholder="Enter your full name"
+              />
+            </div>
+            <div class="form-fields">
+              <label class="l" for="email">Email Address</label>
+              <input
+                class="i"
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email"
+              />
+            </div>
+          </div>
+          <div class="row2">
+            <div class="form-fields">
+              <label class="l" for="subject">Subject</label>
+              <input
+                class="i"
+                type="text"
+                id="subject"
+                name="subject"
+                placeholder="Title of you message"
+              />
+            </div>
+          </div>
+          <div class="row2">
+            <div class="form-fields">
+              <label class="l" for="message">Your Message</label>
+              <textarea
+                class="i"
+                id="message"
+                name="message"
+                rows="5"
+                placeholder="Enter your message"
+              ></textarea>
+            </div>
+          </div>
+          <button>Send Message</button>
+        </div>
+
+        <div class="map">
+          <iframe
+          class="if"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.488953438545!2d144.9630580153185!3d-37.8142179797517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d43d6a4c63d%3A0x5045675218ce6e0!2sMelbourne%20VIC%2C%20Australia!5e0!3m2!1sen!2sus!4v1625151709456!5m2!1sen!2sus"
+            width="550"
+            height="550"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          >
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
